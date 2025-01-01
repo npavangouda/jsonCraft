@@ -1,8 +1,9 @@
 {
   "name": "jsonify",
   "displayName": "jsonify",
-  "description": "clean and pretty json",
+  "description": "Jsonify: A simple tool to format JSON data and replace encoded entities like &nbsp; with proper double quotes.",
   "version": "0.0.1",
+  "type": "commonjs",
   "engines": {
     "vscode": "^1.96.0"
   },
@@ -12,10 +13,20 @@
   "activationEvents": [],
   "main": "./extension.js",
   "contributes": {
-    "commands": [{
-      "command": "jsonify.helloWorld",
-      "title": "Hello World"
-    }]
+    "commands": [
+      {
+        "command": "jsonify.formatJson",
+        "title": "Jsonify: Format JSON"
+      }
+    ],
+    "menus": {
+      "editor/context": [
+        {
+          "command": "jsonify.formatJson",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
@@ -23,11 +34,15 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.96.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
-    "eslint": "^9.16.0",
+    "@types/vscode": "^1.96.0",
     "@vscode/test-cli": "^0.0.10",
-    "@vscode/test-electron": "^2.4.1"
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.16.0"
+  },
+  "dependencies": {
+    "he": "^1.2.0",
+    "parse-json": "^8.1.0"
   }
 }
