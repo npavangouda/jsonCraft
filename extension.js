@@ -18,8 +18,6 @@ async function activate(context) {
 	// The commandId parameter must match the command field in package.json
 	const disposable = vscode.commands.registerCommand('jsonify.formatJson', async function () {
 		// The code you place here will be executed every time your command is executed
-		const parseJson = (await import('parse-json')).default;
-		const he = (await import('he')).default;
 
 		// Display a message box to the user
 		// vscode.window.showInformationMessage('Hello World from jsonify!');
@@ -42,8 +40,11 @@ async function activate(context) {
 			const parseJson = (await import('parse-json')).default;
 			const he = (await import('he')).default;
 
+			// Remove unnecessary escape characters before HTML entities
+			let cleanedText = text.replace(/\\(&#[0-9]+;)/g, '$1');
+
 			// Decode HTML entities using 'he' package
-			const decodedText = he.decode(text);
+			let decodedText = he.decode(cleanedText);
 
 			// Parse the decoded text as JSON
 			const formattedJson = parseJson(decodedText);
