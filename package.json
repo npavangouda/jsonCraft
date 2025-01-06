@@ -9,6 +9,10 @@
     "name": "Pavan N Gouda"
   },
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/npavangouda/jsonify"
+  },
   "type": "commonjs",
   "engines": {
     "vscode": "^1.96.0"
