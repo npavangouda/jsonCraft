@@ -28,7 +28,9 @@ async function activate(context) {
 			return;
 		}
 
-		const text = editor.document.getText();
+		// check if any selection is made
+		const selection = editor.selection;
+		const text = selection.isEmpty ? editor.document.getText() : editor.document.getText(selection);
 
 		if (!text) {
 			vscode.window.showInformationMessage('No text found in the editor.');
@@ -54,11 +56,15 @@ async function activate(context) {
 
 			// Apply changes to the editor
 			editor.edit((editBuilder) => {
-				const fullRange = new vscode.Range(
-					editor.document.positionAt(0),
-					editor.document.positionAt(text.length)
-				);
-				editBuilder.replace(fullRange, prettyJson);
+				if (selection.isEmpty) {
+					const fullRange = new vscode.Range(
+						editor.document.positionAt(0),
+						editor.document.positionAt(text.length)
+					);
+					editBuilder.replace(fullRange, prettyJson);
+				} else {
+					editBuilder.replace(selection, prettyJson);
+				}
 			});
 		} catch (error) {
 			vscode.window.showErrorMessage(
