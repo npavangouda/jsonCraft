@@ -4,7 +4,7 @@
   "description": "Jsonify: A simple tool to format JSON data and replace encoded entities like &nbsp; with proper double quotes.",
   "version": "1.0.0",
   "icon": "assets/jsonify.png",
-  "publisher": "npavangouda",
+  "publisher": "npavangouda-extn-jsonify",
   "author": {
     "name": "Pavan N Gouda"
   },
