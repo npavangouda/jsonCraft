@@ -1,65 +1,59 @@
-# jsonify README
+# jsonify Visual Studio Code
+[![VisualStudioMarketplace](https://img.shields.io/badge/VisualStudioMarketplace-v1.0.0-orange.svg)]()
 
-This is the README for your extension "jsonify". After writing up a brief description, we recommend including the following sections.
+This extension adds json formatting support for Visual Studio Code in contextmenu.
 
-## Features
+---
+## About
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+GitHub: https://github.com/npavangouda/jsonify
 
-For example if there is an image subfolder under your extension project workspace:
+<p align="center"><img src="https://raw.githubusercontent.com/npavangouda/jsonify/master/assets/jsonify.png" alt="omi" width="300"/></p>
 
-\!\[feature X\]\(images/feature-x.png\)
+---
+## **Features**
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+### 1. **Format JSON**
+- Beautify JSON data for better readability.
+- Indents JSON objects and arrays to make them human-readable.
 
-## Requirements
+### 2. **Handle Special Characters**
+- Converts HTML entities (e.g., `&#34;`) to their JSON-safe equivalents (e.g., `"`).
+- Handles nested and escaped characters seamlessly.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+### 3. **Partial Formatting**
+- Format only the selected portion of JSON in your document without affecting the rest.
 
-## Extension Settings
+### 4. **Error Handling**
+- Provides informative error messages for invalid JSON structures.
+- Displays a message when no content is available for formatting.
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+### 6. **User-Friendly Commands**
+- Easily accessible through the **Command Palette** (`Ctrl+Shift+P` or `Cmd+Shift+P`) or the **Context Menu**:
+  - **Command**: `Jsonify: Format JSON`
+  - **Context Menu**: Right-click in the editor and select **FormatMyJson**.
 
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
+### 7. **Keyboard Shortcuts**
+- Configure your own keyboard shortcuts for the `Jsonify: Format JSON` command to streamline usage.
 
 ---
 
-## Working with Markdown
+## **How to Use**
 
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
+### **Format JSON**
+1. Open a file with JSON content or paste the JSON string into the editor.
+2. Right-click anywhere in the editor and select **FormatMyJson** from the context menu.
+3. Alternatively, open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`), type `Jsonify`, and select **Jsonify: Format JSON**.
+4. To format only a part of the JSON, select the desired section before running the command.
 
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
 
-## For more information
 
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
+---
+## Release Notes
+
+### 1.0.0
+
+Initial release of jsonify
+
 
 **Enjoy!**
