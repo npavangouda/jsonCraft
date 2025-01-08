@@ -8,18 +8,20 @@ This extension adds json formatting support for Visual Studio Code in contextmen
 
 GitHub: https://github.com/npavangouda/jsonify
 
-<p align="center"><img src="https://raw.githubusercontent.com/npavangouda/jsonify/master/assets/jsonify.png" alt="omi" width="300"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/npavangouda/jsonify/master/assets/jsonify.png" alt="jsonify" width="300"/></p>
 
 ---
 ## **Features**
 
-### 1. **Format JSON**
-- Beautify JSON data for better readability.
-- Indents JSON objects and arrays to make them human-readable.
-
-### 2. **Handle Special Characters**
+### 1. **Handle Special Characters**
 - Converts HTML entities (e.g., `&#34;`) to their JSON-safe equivalents (e.g., `"`).
 - Handles nested and escaped characters seamlessly.
+
+<p align="left"><img src="https://raw.githubusercontent.com/npavangouda/jsonify/master/assets/jsonify_format.gif" alt="jsonify"/></p>
+
+### 2. **Format JSON**
+- Beautify JSON data for better readability.
+- Indents JSON objects and arrays to make them human-readable.
 
 ### 3. **Partial Formatting**
 - Format only the selected portion of JSON in your document without affecting the rest.
