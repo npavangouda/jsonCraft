@@ -55,7 +55,7 @@ suite('Extension Test Suite', () => {
 			const document = await vscode.window.showTextDocument(editor);
 			await vscode.commands.executeCommand('editor.action.selectAll');
 			await vscode.commands.executeCommand('editor.action.triggerSuggest');
-			await vscode.commands.executeCommand('jsonify.formatJson');
+			await vscode.commands.executeCommand('jsonCraft.formatJson');
 
 			// Wait for the UI to update
 			await new Promise(resolve => setTimeout(resolve, 100));
@@ -74,7 +74,7 @@ suite('Extension Test Suite', () => {
 		const document = await vscode.window.showTextDocument(editor);
 		await vscode.commands.executeCommand('editor.action.selectAll');
 		await vscode.commands.executeCommand('editor.action.triggerSuggest');
-		await vscode.commands.executeCommand('jsonify.formatJson');
+		await vscode.commands.executeCommand('jsonCraft.formatJson');
 
 		const finalContent = document.document.getText();
 		assert.strictEqual(finalContent, input, 'The document should remain unchanged.');
@@ -87,7 +87,7 @@ suite('Extension Test Suite', () => {
 		const document = await vscode.window.showTextDocument(editor);
 		await vscode.commands.executeCommand('editor.action.selectAll');
 		await vscode.commands.executeCommand('editor.action.triggerSuggest');
-		await vscode.commands.executeCommand('jsonify.formatJson');
+		await vscode.commands.executeCommand('jsonCraft.formatJson');
 
 		const finalContent = document.document.getText();
 		assert.strictEqual(finalContent, '', 'The document should remain empty for empty input.');

@@ -1,4 +1,4 @@
-# jsonify Visual Studio Code
+# jsonCraft Visual Studio Code
 [![VisualStudioMarketplace](https://img.shields.io/badge/VisualStudioMarketplace-v1.0.0-orange.svg)]()
 
 This extension adds json formatting support for Visual Studio Code in contextmenu.
@@ -6,9 +6,9 @@ This extension adds json formatting support for Visual Studio Code in contextmen
 ---
 ## About
 
-GitHub: https://github.com/npavangouda/jsonify
+GitHub: https://github.com/npavangouda/jsonCraft
 
-<p align="center"><img src="https://raw.githubusercontent.com/npavangouda/jsonify/master/assets/jsonify.png" alt="jsonify" width="300"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/npavangouda/jsonCraft/master/assets/jsonCraft.png" alt="jsonCraft" width="300"/></p>
 
 ---
 ## **Features**
@@ -17,7 +17,7 @@ GitHub: https://github.com/npavangouda/jsonify
 - Converts HTML entities (e.g., `&#34;`) to their JSON-safe equivalents (e.g., `"`).
 - Handles nested and escaped characters seamlessly.
 
-<p align="left"><img src="https://raw.githubusercontent.com/npavangouda/jsonify/master/assets/jsonify_format.gif" alt="jsonify"/></p>
+<p align="left"><img src="https://raw.githubusercontent.com/npavangouda/jsonCraft/master/assets/jsonCraft_format.gif" alt="jsonCraft"/></p>
 
 ### 2. **Format JSON**
 - Beautify JSON data for better readability.
@@ -32,11 +32,11 @@ GitHub: https://github.com/npavangouda/jsonify
 
 ### 6. **User-Friendly Commands**
 - Easily accessible through the **Command Palette** (`Ctrl+Shift+P` or `Cmd+Shift+P`) or the **Context Menu**:
-  - **Command**: `Jsonify: Format JSON`
+  - **Command**: `jsonCraft: Format JSON`
   - **Context Menu**: Right-click in the editor and select **FormatMyJson**.
 
 ### 7. **Keyboard Shortcuts**
-- Configure your own keyboard shortcuts for the `Jsonify: Format JSON` command to streamline usage.
+- Configure your own keyboard shortcuts for the `jsonCraft: Format JSON` command to streamline usage.
 
 ---
 
@@ -45,7 +45,7 @@ GitHub: https://github.com/npavangouda/jsonify
 ### **Format JSON**
 1. Open a file with JSON content or paste the JSON string into the editor.
 2. Right-click anywhere in the editor and select **FormatMyJson** from the context menu.
-3. Alternatively, open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`), type `Jsonify`, and select **Jsonify: Format JSON**.
+3. Alternatively, open the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`), type `jsonCraft`, and select **jsonCraft: Format JSON**.
 4. To format only a part of the JSON, select the desired section before running the command.
 
 
@@ -55,7 +55,7 @@ GitHub: https://github.com/npavangouda/jsonify
 
 ### 1.0.0
 
-Initial release of jsonify
+Initial release of jsonCraft
 
 
 **Enjoy!**

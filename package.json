@@ -1,17 +1,17 @@
 {
-  "name": "jsonify",
-  "displayName": "jsonify",
-  "description": "Jsonify: A simple tool to format JSON data and replace encoded entities like &nbsp; with proper double quotes.",
+  "name": "jsonCraft",
+  "displayName": "jsonCraft",
+  "description": "jsonCraft: A simple tool to format JSON data and replace encoded entities like &nbsp; with proper double quotes.",
   "version": "1.0.0",
-  "icon": "assets/jsonify.png",
-  "publisher": "npavangouda-extn-jsonify",
+  "icon": "assets/jsonCraft.png",
+  "publisher": "npavangouda",
   "author": {
     "name": "Pavan N Gouda"
   },
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/npavangouda/jsonify"
+    "url": "https://github.com/npavangouda/jsonCraft"
   },
   "type": "commonjs",
   "engines": {
@@ -25,14 +25,14 @@
   "contributes": {
     "commands": [
       {
-        "command": "jsonify.formatJson",
-        "title": "Jsonify: Format JSON"
+        "command": "jsonCraft.formatJson",
+        "title": "jsonCraft: Format JSON"
       }
     ],
     "menus": {
       "editor/context": [
         {
-          "command": "jsonify.formatJson",
+          "command": "jsonCraft.formatJson",
           "group": "navigation"
         }
       ]
