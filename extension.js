@@ -31,13 +31,8 @@ async function activate(context) {
 				.replace(/:""/g, ':"\\"')
 				.replace(/"",/g, '\\"",')
 				.replace(/""}/g, '\\""}');
-			// cleanedText = cleanedText.replace(/"([^"]*?)"/g, (match, group) => {
-			// 	const escapedValue = group.replace(/"/g, '\\"'); // Escape unescaped double quotes
-			// 	return escapedValue;
-			// });
 		}
 
-	// cleanedText = cleanedText.replace(/^"|"$/g, '');
 	return cleanedText;
 };
 
@@ -62,10 +57,6 @@ const disposable = vscode.commands.registerCommand('jsonCraft.formatJson', async
 
 		// set the language mode to JSON
 		await vscode.languages.setTextDocumentLanguage(editor.document, 'json');
-
-		// Remove unnecessary escape characters before HTML entities
-		// let cleanedText = text.replace(/\\(&#[0-9]+;)/g, '$1');
-
 
 		// Decode HTML entities using 'he' package
 		let decodedText = decode(text);
