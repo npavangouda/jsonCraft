@@ -2,7 +2,7 @@
   "name": "jsonCraft",
   "displayName": "jsonCraft",
   "description": "jsonCraft: A simple tool to format JSON data and replace encoded entities like &nbsp; with proper double quotes.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "icon": "assets/jsonCraft.png",
   "publisher": "npavangouda",
   "author": {
@@ -44,8 +44,10 @@
     "test": "vscode-test"
   },
   "devDependencies": {
+    "@types/he": "^1.2.3",
     "@types/mocha": "^10.0.10",
     "@types/node": "20.x",
+    "@types/parse-json": "^4.0.2",
     "@types/vscode": "^1.86.0",
     "@vscode/test-cli": "^0.0.10",
     "@vscode/test-electron": "^2.4.1",
@@ -53,6 +55,6 @@
   },
   "dependencies": {
     "he": "^1.2.0",
-    "parse-json": "^8.1.0"
+    "json-parse-even-better-errors": "^4.0.0"
   }
 }
