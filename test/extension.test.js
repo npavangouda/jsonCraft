@@ -72,7 +72,7 @@ suite('Extension Test Suite', () => {
 		const input = `{
     "name": "John",
     "age": 30,
-    "city": "New York"`;
+    "city": "New York`;
 		const editor = await workspace.openTextDocument({ content: input, language: 'json' });
 		const document = await window.showTextDocument(editor);
 		await commands.executeCommand('editor.action.selectAll');

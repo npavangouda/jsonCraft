@@ -1,10 +1,11 @@
 {
-    "input": "&#34;{&#34;headers&#34;:{&#34;referer&#34;:&#34;https://asdfa.com/&#34;,&#34;ui-platform&#34;:&#34;&#34;Windows&#34;&#34;,&#34;forwarded&#34;:&#34;proto=https;host=asdfa.com;for=&#34;124.123.125.148: 12354&#34;&#34;},&#34;body&#34;:&#34;{&#34;id&#34;: 0,&#34;name&#34;: &#34;Madeleine Reilly&#34;}&#34;}&#34;",
+    "input": "&#34;{&#34;headers&#34;:{&#34;referer&#34;:&#34;https://asdfa.com/&#34;,&#34;ui-platform&#34;:&#34;&#34;Windows&#34;&#34;,&#34;forwarded&#34;:&#34;proto=https;host=asdfa.com;for=&#34;124.123.125.148: 12354&#34;&#34;,&#34;sec-fetch-mode&#34;:&#34;cors&#34;},&#34;body&#34;:&#34;{&#34;id&#34;: 0,&#34;name&#34;: &#34;Madeleine Reilly&#34;}&#34;}&#34;",
     "output": {
         "headers": {
             "referer": "https://asdfa.com/",
             "ui-platform": "\"Windows\"",
-            "forwarded": "proto=https;host=asdfa.com;for=\"124.123.125.148: 12354\""
+            "forwarded": "proto=https;host=asdfa.com;for=\"124.123.125.148: 12354\"",
+            "sec-fetch-mode": "cors"
         },
         "body": {
             "id": 0,
