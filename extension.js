@@ -104,6 +104,12 @@ async function activate(context) {
 				} else {
 					editBuilder.replace(selection, finalJsonText);
 				}
+			}).then(() => {
+				// Move caret to the beginning
+				const newPosition = new vscode.Position(0, 0); // Line 0, Column 0
+				editor.selection = new vscode.Selection(newPosition, newPosition);
+				// Ensure the editor scrolls to the top
+				editor.revealRange(new vscode.Range(newPosition, newPosition), vscode.TextEditorRevealType.AtTop);
 			});
 
 			// Trigger Format Document
